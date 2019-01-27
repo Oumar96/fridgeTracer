@@ -9,7 +9,7 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'Tracker/main.css'%}">
+    <link rel="stylesheet" href="{% static 'Tracker/css/main.css'%}">
     <title>MyBlogSpace</title>
 </head>
 <body>
@@ -23,6 +23,8 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <div class="navbar-nav mr-auto">
                         <a class="nav-item nav-link" href="#">Home</a>
+                        <a class="nav-item nav-link" href="/Tracker/addItem">Add Item</a>
+                        <a class="nav-item nav-link" href="/Tracker/removeItem">Remove Item</a>
                         
                     </div>
                     <!-- Navbar Right Side -->
@@ -37,7 +39,9 @@
         </nav>
      </header>
      <main role="main" class="container">
-         <div class="row">
+        {% block content %}
+        {% endblock %}
+         <!-- <div class="row">
             <div class="col-md-8">
             </div>
             <div class="col-md-4">
@@ -53,7 +57,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

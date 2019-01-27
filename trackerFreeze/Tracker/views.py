@@ -4,3 +4,9 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, "Tracker/home.html")
+
+def addItem(request):
+    return render(request, "Tracker/addItem.html")
+
+def removeItem(request):
+    return render(request, "Tracker/removeItem.html")
