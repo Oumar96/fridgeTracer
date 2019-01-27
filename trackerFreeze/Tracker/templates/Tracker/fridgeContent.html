@@ -154,14 +154,14 @@ a.c1 {font-weight: normal;}
                         <button id="start_button" onclick="startButton(event)"><img alt="Start" id="start_img"
                         src="{% static 'Tracker/images/mic.gif'%}"></button>
                       </div>
-                      <form class="browser-landing" method="GET" action="addItem_submission">
+                      <form class="browser-landing" method="GET" action="fridgeContent">
                             {% csrf_token %}
                             <div id="results">
                                     <span class="final" >
-                                        <textarea type="text" name="voice_value" id="final_span" class="final"></textarea>
+                                        <textarea type="text" name="voice_value" id="final_span"></textarea>
                                     </span> 
                                     <input type="submit" value="Submit">
-                                    <span class="interim" id="interim_span" >
+                                    <span class="interim" id="interim_span">
                                     </span>
                                   </div>
                             
