@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class inside_Freeze(models.Model):
+    items = models.TextField()
+    amount = models.FloatField(default = None) 
+    expire_date = models.DateTimeField()

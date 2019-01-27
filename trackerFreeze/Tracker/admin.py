@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import inside_Freeze
 
-# Register your models here.
+admin.site.register(inside_Freeze)
