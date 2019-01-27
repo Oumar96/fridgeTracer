@@ -22,4 +22,5 @@ except sr.RequestError as e:
 
 
 def home(request):
-    return render(request, "Tracker/base.html")
+    return render(request, "Tracker/home.html")
+
